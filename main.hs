@@ -31,8 +31,6 @@ main = do
       let pixelsInt = (map read $ (words . unwords) pixels) :: [Int]
       let p = Photo tipo width height maxValue pixelsInt
 
-
-
       --putStrLn $ show e
       let final_output = foldl (\acc f -> applyChanges acc f) p flags
       writeFile (last $ take 2 args) $ mountOutput final_output

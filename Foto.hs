@@ -8,7 +8,6 @@ module Foto
 
   import Test.QuickCheck
 
-
   data Photo a = Photo {  tipo :: String,
                         width :: Int,
                         height :: Int,
@@ -113,7 +112,6 @@ module Foto
 
   mergeLines :: [[Int]] -> [[Int]] -> [[Int]]
   mergeLines x1 x2 = [ zipWith (\a b -> div (a+b) 2) x y | (x,y) <- zip x1 x2 ]
-
 
   ----- Corre testes -----
   runTests = do
