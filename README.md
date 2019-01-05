@@ -1,11 +1,11 @@
-Photochop_haskell
+# Photochop_haskell
 Working with images using haskell language
 
-Compile
+# Compile
 ghc --make main.hs -o photoshop
 
-Running tests
+# Running tests
 $ ./run.sh
 
-Running quickCheck
+# Running quickCheck
 $ ./photoshop -t
